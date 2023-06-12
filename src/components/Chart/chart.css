@@ -1,0 +1,18 @@
+@media (max-width: 767.98px) {
+    .chart .heading {
+        font-size: 22px;
+    }
+
+    .chart .img-fluid {
+        width: 300px;
+    }
+
+    .chart .lead {
+        font-size: 18px;
+    }
+
+    .chart .container {
+        padding: 2% 15% !important;
+    }
+
+}

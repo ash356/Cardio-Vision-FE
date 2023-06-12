@@ -1,0 +1,26 @@
+:root {
+    --main-web-color: #00CEC8;
+    --light-color: #f5f5f5;
+    --dark-color: #1b242c;
+    --txtColor: #111;
+    --secTxtColor: #666;
+    --white: #FFF;
+}
+
+#light {
+    color: var(--dark-color);
+}
+
+#dark {
+    color: var(--white);
+}
+
+.result .result-container .head {
+    color: var(--main-web-color);
+}
+
+@media (max-width:767px) {
+    .result .result-container {
+        margin-left: 17% !important;
+    }
+}

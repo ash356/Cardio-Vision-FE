@@ -1,0 +1,63 @@
+:root {
+    --light-color: #f5f5f5;
+    --dark-color: #1b242c;
+    --main-color: #00CEC8
+}
+
+.form .patient-form {
+    max-width: 85%;
+    margin: 0 5% 0 12%;
+    padding-bottom: 5%;
+}
+
+.form .patient-form h2 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-style: italic !important;
+}
+
+.form .patient-form input.form-control {
+    text-align: center !important;
+    background-color: #fff !important;
+}
+
+#light .patient-form label {
+    color: var(--dark-color);
+}
+
+#dark .patient-form label {
+    color: var(--light-color);
+}
+
+.form .patient-form .col label {
+    margin-bottom: 10px;
+}
+
+.form .patient-form input,
+.form .patient-form select {
+    height: 50px;
+    text-align: center !important;
+}
+
+@media (max-width: 991px) {
+    .form .patient-form .my-4 {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(366px, 1fr));
+    }
+
+    .form .patient-form .pl {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .form .patient-form .my-4 {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+
+    .form .patient-form {
+        max-width: 70%;
+        margin: 0 5% 0 22%;
+    }
+}

@@ -1,0 +1,195 @@
+:root {
+    --bg-sec-dark: rgb(39 54 67)
+}
+
+.bg-gray {
+    background-color: var(--bg-sec-dark);
+}
+
+.profile section {
+    margin-top: -100px !important;
+}
+
+.bg-image {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+}
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.form .pl {
+    padding-left: 18px !important;
+}
+
+.profile .form-group {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 767px) {
+    section {
+        padding: 100px 30px !important;
+        margin: 0px 0px 0px 30px !important;
+    }
+
+    .btn-danger {
+        font-size: 11px !important;
+    }
+
+    .content {
+        height: 700px;
+    }
+
+    .profile .form-group {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+
+    }
+
+    .card-body {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: whitesmoke;
+}
+
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.8rem 0;
+    color: #000;
+}
+
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #431af7;
+}
+
+.account-settings .about p {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.card {
+    border: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 25px;
+}
+
+.card-body {
+    padding: 25px 20px;
+    border-radius: 20px;
+}
+
+
+
+.profile-pic {
+    color: transparent;
+    transition: all .3s ease;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.input {
+    display: none;
+}
+
+
+.label {
+    cursor: pointer;
+}
+
+
+.label :hover {
+    color: #009688;
+    /* z-index: 10000; */
+    transition: background-color .2s ease-in-out;
+    margin-bottom: 0;
+}
+
+
+span {
+    display: inline-flex;
+    padding: .2em;
+    height: 2em;
+}
+
+section {
+    padding: 100px;
+    overflow: hidden;
+}
+
+/* Form */
+.profile .form {
+    background-color: none !important;
+    /* max-width: 500px; */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Form */
+.profile button {
+    margin: 0px;
+}
+
+.profile .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile .loading-indicator {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

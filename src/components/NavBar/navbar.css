@@ -1,0 +1,208 @@
+:root {
+    --main-web-color: #00CEC8;
+    --light-color: #f5f5f5;
+    --dark-color: #1b242c;
+    --txtColor: #111;
+    --secTxtColor: #666;
+    --white: #FFF;
+}
+
+/*Start Navbar*/
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    padding-left: 50px !important;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+#light nav {
+    background-color: var(--light-color);
+}
+
+#dark nav {
+    background-color: var(--dark-color);
+}
+
+#light .colr,
+#light .nav .navlinks li .a {
+    color: var(--dark-color);
+}
+
+#dark .logo,
+#dark .navlinks li .a {
+    color: var(--white);
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 1.8em;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    color: var(--main-web-color);
+}
+
+nav .navlinks {
+    /* position: relative; */
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav .navlinks li {
+    list-style: none;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: bounceInDown 0.5s ease-in-out forwards; */
+}
+
+nav .navlinks li .a {
+    text-decoration: none;
+    font-weight: 300;
+    transition: .5s;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav .navlinks li .a:hover,
+nav ul li.activeColor .a {
+    color: var(--white);
+}
+
+/*End Navbar*/
+/*Start Burger Toggle Btn*/
+#light .burger {
+    filter: invert(1);
+
+}
+
+#dark .burger {
+    filter: drop-shadow();
+
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../assets/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    cursor: pointer;
+    color: #000;
+}
+
+body.open .burger {
+    background-image: url("../../assets/close.png");
+    background-size: 25px;
+
+}
+
+@media (width >=991px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (width < 991px) {
+    body.open .dropdowns {
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+    }
+
+    #light .dropdowns {
+        background-color: var(--light-color);
+    }
+
+    #dark .dropdowns {
+        background-color: #2c2b30;
+    }
+}
+
+
+
+@media (width >=991px) {
+    .dropdowns {
+        position: static;
+        flex-direction: row;
+        justify-content: flex-start;
+        background: transparent;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/*End Burger Toggle Btn*/
+@media (max-width: 991px) {
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav .navlinks {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        transition: .5s;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        background: var(--white);
+        width: 100%;
+        height: 100vh;
+    }
+
+    nav .navlinks li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    nav .navlinks li .a {
+        color: var(--txtColor);
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo img {
+        display: none;
+    }
+
+    nav .logo {
+        padding: 0;
+    }
+}
+
+#light .profile-name {
+    color: var(--dark-color);
+}
+
+#dark .profile-name {
+    color: var(--light-color);
+}
+
+.profile-name {
+    padding: 0px 8px;
+}
